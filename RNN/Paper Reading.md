@@ -755,6 +755,9 @@ where, $P$ is the probability assigned by the model to the word sequence $w_1, w
 
 Multilayer Recurrent Neural Networks (RNNs) enhance the model's capacity to learn intricate patterns by stacking multiple RNN layers on top of each other. Each layer processes the input sequence and passes its hidden states to the subsequent layer, allowing the network to capture hierarchical representations of the data. This structure can significantly improve performance on tasks that require understanding complex temporal dependencies.
 
+![Stacked LSTM](./Diagrams/Stacked%20LSTM.png) \
+**Fig. Explanation of Language Modelling using Stacked LSTMs**
+
 #### Key Features:
 1. **Layer Stacking**:
     - Each RNN layer processes the input sequence and produces an output sequence of hidden states.
@@ -794,6 +797,9 @@ model.fit(x_train, y_train, epochs=10)
 ### 5.2 Bidirectional RNNs
 
 Bidirectional Recurrent Neural Networks (RNNs) address the limitation of standard RNNs, which only use past context to predict future outcomes. Bidirectional RNNs process sequences in both forward and backward directions, allowing the model to have access to both past and future contexts at each point in the sequence. This dual-context approach improves performance on tasks where understanding the entire context is crucial, such as named entity recognition, sentiment analysis, and machine translation.
+
+![Bi-directional LSTM](./Diagrams/Bidirectional%20LSTM.png) \
+**Fig. Explanation of POS Tagging using Bi-directional LSTM**
 
 #### Key Features:
 1. **Dual-Context Processing**:
